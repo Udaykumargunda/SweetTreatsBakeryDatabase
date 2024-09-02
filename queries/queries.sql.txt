@@ -1,0 +1,14 @@
+-- Get all customers
+SELECT * FROM Customers;
+
+-- Get all orders for a specific customer
+SELECT * FROM Orders WHERE CustomerID = 1;
+
+-- Get all products in the inventory
+SELECT * FROM Inventory;
+
+-- Get the total sales for a specific date range
+SELECT SUM(OrderTotal) FROM Orders WHERE OrderDate BETWEEN '2022-01-01' AND '2022-01-31';
+
+-- Get the quantity of a specific product in the inventory
+SELECT Quantity FROM Inventory WHERE ProductName = 'Chocolate Cake'; 
